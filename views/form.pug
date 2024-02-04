@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+  div.new-form
+    h1.new-form__heading New Person Form
+    p.new-form__headline Add a new person below.
+    form.new-form__form(action="/new", method="POST")
+      label(for="author-name") 
+        span Name:
+        input#author-name(type="text", name="author")
+      label(for="message") 
+        span Message:
+        textarea#message(type="text", name="message")
+      button(type="submit") Add Message

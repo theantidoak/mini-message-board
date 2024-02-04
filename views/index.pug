@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.home
+    h1.home__heading= title
+    p.home__headline Welcome to the #{title.toLowerCase()}
+    ul.messages__items
+      each message in messages
+        li.messages__item
+          p= message.text
+          p= message.user
+          p= message.added
+    a.home__form-link(href="/new") Add Message 
