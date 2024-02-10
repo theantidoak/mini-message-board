@@ -18,6 +18,7 @@
     "sass": "^1.70.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.1",
     "nodemon": "^3.0.3"
   }
 }
